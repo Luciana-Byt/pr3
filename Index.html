@@ -1,0 +1,23 @@
+<<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="titi" src="titi.glb"></a-asset-item>
+      </a-assets>
+
+      <a-gltf-model 
+        src="#titi" 
+        position="0 0 -5" 
+        scale="0.1 0.1 0.1">
+      </a-gltf-model>
+
+      <a-entity light="type: ambient; intensity: 1"></a-entity>
+      <a-entity light="type: directional; intensity: 0.5" position="1 1 1"></a-entity>
+
+      <a-sky color="#222"></a-sky>
+    </a-scene>
+  </body>
+</html>
